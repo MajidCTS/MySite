@@ -1,0 +1,23 @@
+.code-slash::after {
+    content: url('../img/icons/code-slash.svg');
+}
+
+
+
+
+/* برای نمایش نرم عنصر دارای این کلاس. به کمک جاوا اسکریپت کلاس ویزیبل اضافه خواهد شد */
+/* ============================================================= */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(50px);
+    /* transition: opacity 0.8s ease, transform 0.8s ease; */
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in-element.visible {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* ============================================================= */
